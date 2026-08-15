@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Snap to Text — offscreen worker</title>
+  </head>
+  <body>
+    <!-- Runs at the extension's own origin, so host-page Content-Security-Policy
+         (e.g. Facebook's worker-src restrictions) can't block the OCR worker. -->
+    <script src="vendor/tesseract.min.js"></script>
+    <script src="offscreen.js"></script>
+  </body>
+</html>
